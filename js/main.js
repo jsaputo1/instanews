@@ -4,12 +4,12 @@ console.log ("working")
 $(function() {
 
     $('.drop-down').on("change", function() {
-        // console.log ("test")
+        console.log ("test")
 
     let userInput= $("select").val()
 
 
-    // console.log (userInput)
+    console.log (userInput)
 
         $.ajax({
             dataType: "json",
@@ -21,7 +21,7 @@ $(function() {
 
         .done(function ({results}){
             $.each(results, function(index, value) {
-                // console.log (index,value)
+                console.log (index,value)
                 // console.log (value)
 
                 //Variables
@@ -33,13 +33,7 @@ $(function() {
                 if (index === 12) return false;
 
                 //Display articles
-
-                // if (condition) {
-                //     //  block of code to be executed if the condition is true
-                //   } else {
-                //     //  block of code to be executed if the condition is false
-                //   }
-     
+                
                 $('.main-content').append(`
                 <figure class="article-image">
                     <img src="${articleImage}">
@@ -48,7 +42,7 @@ $(function() {
                 </figure>`);
 
                 //Remove previous articles
-                $('.drop-drown').on("change", function() {
+                $('.drop-down').on("change", function() {
                     $('.main-content').empty()
                 })
              })

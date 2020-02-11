@@ -21,7 +21,7 @@ gulp.task("scripts", function(done){
 gulp.task ('sass', function() {
     return gulp
     //locates scss files
-    .src('./css/style.scss')
+    .src('./sass/style.scss')
     //converts sass to css
     .pipe(sass())
     //adds prefixes for compatability
@@ -49,7 +49,7 @@ gulp.task('watch', function () {
     })
 
     gulp.watch('./js/*.js', gulp.series(['scripts']))
-    gulp.watch('./css/*.scss', gulp.series(['sass']))
+    gulp.watch('./sass/*.scss', gulp.series(['sass']))
     gulp.watch('./*html').on('change', browserSync.reload)
 
 
