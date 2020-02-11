@@ -12,15 +12,25 @@ body {
     }
 }
 
-.logo {
-    margin: 10px 0px;
+header {
+
+    
+
+@include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+    
 }
 
- 
-select {
-    color: green;
-}
-   
+
 
 .main-content {
 
@@ -42,13 +52,7 @@ select {
             position: relative;
         }
 }
-
-.drop-down {
-
-    h1 {
-        margin-bottom: 25px;
-    }
-}
+ 
 
 .article-image img {
     grid-column-start: 1;
@@ -66,8 +70,19 @@ select {
     padding: 15px 20px;  
 }
 
-
-.test {
-    margin-top: 10px;
+footer {
+  
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            }
 }
+
 
