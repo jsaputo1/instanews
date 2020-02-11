@@ -3,7 +3,7 @@ console.log ("working")
 
 $(function() {
 
-    $('.drop-down').on("change", function() {
+    $('.selection').on("change", function() {
         console.log ("test")
 
     let userInput= $("select").val()
@@ -42,9 +42,22 @@ $(function() {
                 </figure>`);
 
                 //Remove previous articles
-                $('.drop-down').on("change", function() {
+                $('.selection').on("change", function() {
                     $('.main-content').empty()
                 })
+
+                //Move header to the top
+                $("header").addClass("header-top")
+
+                //Adjust tablet/desk logo size
+                $(".logo").addClass("logo-size")
+
+             
+                
+                
+
+
+
              })
             })
     }) // close button function  
