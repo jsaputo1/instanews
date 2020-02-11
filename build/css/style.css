@@ -1,7 +1,7 @@
 /* Typography */
 @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts//OpenSans-Bold.eot/");
   src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
@@ -33,18 +33,48 @@ body {
   font-family: "Open Sans";
   background-color: #000000;
   text-align: center; }
+  body a {
+    text-decoration: none;
+    color: white; }
 
-figure {
-  position: relative;
-  text-align: center; }
+.logo {
+  margin: 10px 0px; }
+
+select {
+  color: green; }
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 25px; }
+  @media (min-width: 600px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 1240px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  .main-content figure {
+    position: relative; }
+
+.main-menu h1 {
+  margin-bottom: 25px; }
 
 .article-image img {
+  grid-column-start: 1;
   height: 400px;
   width: 100%;
-  object-fit: cover; }
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .article-text {
-  position: absolute;
-  color: white;
+  text-align: left;
+  grid-column-start: 1;
   background: rgba(0, 0, 0, 0.75);
-  padding: 10px 10px; }
+  position: absolute;
+  bottom: 0px;
+  padding: 15px 20px; }
+
+.test {
+  margin-top: 10px; }

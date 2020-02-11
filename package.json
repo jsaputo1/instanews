@@ -17,5 +17,9 @@
     "last 2 versions",
     "> 1%",
     "IE 10"
-  ]
+  ],
+  "dependencies": {
+    "chosen": "0.0.2",
+    "jquery": "^3.4.1"
+  }
 }

@@ -7,7 +7,7 @@ cssnano = require ("gulp-cssnano")
 autoprefixer = require("gulp-autoprefixer")
 browserSync = require("browser-sync")
 
-gulp.task("default", function(done){
+gulp.task("scripts", function(done){
     return gulp
     .src("./js/*.js") // input files for gulp to minify
     .pipe (terser()) // calls the terser function on these files
@@ -25,11 +25,9 @@ gulp.task ('sass', function() {
     //converts sass to css
     .pipe(sass())
     //adds prefixes for compatability
-    // .pipe (
-    //     autoprefixer ({
-    //         browsers: ['last 2 versions'],
-    //     })
-    // )
+    .pipe (
+        autoprefixer ()
+    )
 
     //adds css to build dir
     .pipe(gulp.dest('./build/css'))
@@ -50,12 +48,13 @@ gulp.task('watch', function () {
         }
     })
 
-    gulp.watch('js/*.js', gulp.series(['scripts']))
-    gulp.watch('./*html').on('change', browseerSync.reload)
+    gulp.watch('./js/*.js', gulp.series(['scripts']))
+    gulp.watch('./css/*.scss', gulp.series(['sass']))
+    gulp.watch('./*html').on('change', browserSync.reload)
 
 
 })
 
-gulp.task("default", gulp.series('watch')())
+gulp.task("default", gulp.series('watch'))
 
 

@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./build/css/style.css" />
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,15 +14,16 @@
 <body>
     <!-- Logo section -->
     <section class="logo">
-        <object type="image/svg+xml" data="./images/nyt-logo.svg" class="logo">
+        <object type="image/svg+xml" data="./images/nyt-logo.svg">
         NY Times
         </object>
     </section>
     <!-- Drop-down menu -->
-    <section class="drop-drown">
-        <h1 class="choose">Choose a section:</h1>
-        <select> 
-            <option value="">Sections...</option>
+    <section class="drop-down">
+        <h1>Choose a section:</h1>
+        <div class="test">
+        <select class="chzn-select">
+            <option value="" selected="selected">Sections...</option>
             <option value="arts">Arts</option>
             <option value="automobiles">Automobiles</option>
             <option value="books">Books</option>
@@ -27,16 +31,9 @@
             <option value="home">Home</option>
             <option value="insider">Insider</option>
         </select> 
+        </div>
     </section>
-    <section class="main-content">
-        <figure>
-            <!-- <div class="test"> -->
-        <object class="article-image"></object>
-             <!-- </div> -->
-        </figure>
-
-  
-      
+    <section class="main-content"> 
     </section>
 
     <!-- Footer -->
@@ -44,12 +41,11 @@
         <p>&copy Copyright 2016 INSTANEWS</p>
     </footer>
 
-
+	
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>    
-    <!-- <script src="gulpfile.js"></script> -->
 </body>
 </html>
