@@ -1,119 +1,123 @@
 body {
+  font-size: 16px;
+  color: white;
+  font-family: "Open Sans";
+  background-color: #000000;
+  text-align: center;
 
-    font-size: 16px;
-    color:white;
-    font-family: "Open Sans";
-    background-color: #000000;
-    text-align: center;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 header {
-    margin-top: 30vh;
+  margin-top: 30vh;
 
-@include tablet {
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+  }
 
-    @include desktop {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.choose {
+  margin-top: 15px;
+}
+
+.selection {
+  @include desktop {
+    margin-left: 50px;
+  }
 }
 
 //Code to change the header in tablet and desktop mode
 .header-top {
-    margin: 0px;
-    padding-top: 25px;
+  margin: 0px;
+  padding-top: 25px;
 }
 
 .logo-size {
-    @include tablet {
-       margin-right: 25px;
+  @include tablet {
+    margin-right: 25px;
 
-       object {
-        width: 40%;
-        }   
+    object {
+      width: 40%;
     }
+  }
 }
 
 //End of responsive header changes
 
-
 .main-content {
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    @include desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
+  @include tablet {
     display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-        figure {
-            position: relative;
-        }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 25px;
+
+  figure {
+    position: relative;
+  }
 }
- 
 
 .article-image img {
-    grid-column-start: 1;
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    }
+  grid-column-start: 1;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
 
 .article-text {
-    text-align: left;
-    grid-column-start: 1;
-    background: rgba(0, 0, 0, 0.75);
-    position: absolute;
-    bottom: 0px;
-    padding: 15px 20px;  
-    
+  text-align: left;
+  grid-column-start: 1;
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0px;
+  padding: 15px 20px;
 }
 
 footer {
-    color: #c2c2c2;
-    text-align: center;
-    padding: 20px 0px; 
-     
+  color: #c2c2c2;
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+
+  @include desktop {
+    text-align: left;
+    margin-left: 25px;
+  }
 }
 
 .bottom-text {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
 
-    @include tablet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        }
-    
-    @include desktop {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-        }
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
 }
-
-
-
-
-
