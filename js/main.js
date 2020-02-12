@@ -4,21 +4,24 @@ console.log ("working")
 $(function() {
 
     $('.selection').on("change", function() {
-        console.log ("test")
+        // console.log ("test")
 
     let userInput= $("select").val()
 
 
-    console.log (userInput)
+    //Move footer back to bottom 
+    if (userInput === 'sections') {
+        $("footer").addClass("bottom-text")
+    }
+
+    // console.log (userInput)
 
         $.ajax({
             dataType: "json",
             method: 'GET',
             url: `https://api.nytimes.com/svc/topstories/v2/${userInput}.json?api-key=qZeF0WlVIE49aaMuTGpSM5bAxYeDLSyT`            
         })
-
         
-
         .done(function ({results}){
             $.each(results, function(index, value) {
                 console.log (index,value)
@@ -31,6 +34,10 @@ $(function() {
 
                 //Max listing
                 if (index === 12) return false;
+
+
+                //Remove fixed footer text
+                $("footer").removeClass("bottom-text")
 
                 //Display articles
                 
@@ -51,6 +58,20 @@ $(function() {
 
                 //Adjust tablet/desk logo size
                 $(".logo").addClass("logo-size")
+
+              
+
+              
+
+                //toggle
+                $('.article-text').hide()
+
+                $('.article-image').hover(function() {
+                    $('.article-text').toggle()
+                    console.log ("test2")
+                })
+
+                
 
              
                 
