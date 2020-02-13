@@ -6,6 +6,13 @@ $(function() {
 
     let userInput = $("select").val();
 
+    if (userInput === "sections") {
+        $("header").removeClass("header-top");
+        $("header").addClass("header-top");
+      
+      }
+
+      
     //Move footer back to bottom
     if (userInput === "sections") {
       $("footer").addClass("bottom-text");
@@ -20,13 +27,16 @@ $(function() {
     })
     .done(function({ results }) {
       $.each(results, function(index, value) {
-        console.log(index, value);
+        // console.log(index, value);
         // console.log (value)
 
         //Variables
         let articleImage = value.multimedia[0].url;
         let url = value.url;
         let description = value.abstract;
+
+
+        
 
         //Max listing
         if (index === 12) return false;
@@ -41,7 +51,11 @@ $(function() {
                     <img src="${articleImage}">
                     <a href="${url}" target="new">
                     <p class="article-text">${description}<p></a>
-                </figure>`);
+                </figure>`)
+
+                if (description === "") {
+                    $(".article-text").append(`${value.title}`)
+                   }
 
         //Remove previous articles
         $(".selection").on("change", function() {
@@ -55,12 +69,12 @@ $(function() {
         $(".logo").addClass("logo-size");
 
         //toggle
-        $(".article-text").hide();
+    //     $(".article-text").hide();
 
-        $(".article-image").hover(function() {
-          $(".article-text").toggle();
-          console.log("test2");
-        });
+    //     $(".article-image").hover(function() {
+    //       $(".article-text").show();
+    //       console.log("test2");
+    //     });
       });
     });
   }); // close button function
