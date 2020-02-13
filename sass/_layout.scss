@@ -12,7 +12,6 @@ body {
 }
 
 header {
-
   margin-top: 30vh;
 
   @include tablet {
@@ -24,6 +23,12 @@ header {
   @include desktop {
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+.loader {
+  @include tablet {
+    margin-left: 50px;
   }
 }
 
@@ -42,31 +47,35 @@ header {
 //Animations
 
 @keyframes header-transition {
-     from {margin-top: 30vh;}
-  to {margin: 0;}
-}
-
-@keyframes header-transition2 {
-    from {margin-top: 0;}
- to {margin: 30vh;}
+  from {
+    margin-top: 30vh;
+  }
+  to {
+    margin: 0;
+  }
 }
 
 @keyframes article-text {
-    from {margin-top: 0;}
- to {margin: 30vh;}
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin: 30vh;
+  }
+}
+
+.cursor {
+  cursor: wait;
 }
 
 .header-top {
-    
   margin: 0px;
   padding-top: 25px;
   animation-name: header-transition;
   animation-duration: 1s;
 }
 
-
 .logo-size {
-
   @include tablet {
     margin-right: 25px;
 
@@ -79,7 +88,6 @@ header {
 //End of responsive header changes
 
 .main-content {
-
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 25px;
@@ -128,7 +136,7 @@ footer {
 
 .bottom-text {
   position: fixed;
-  bottom: 35px;
+  bottom: 0;
   width: 100%;
 
   @include tablet {
