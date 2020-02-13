@@ -60,6 +60,7 @@ $(function() {
         //Remove previous articles
         $(".selection").on("change", function() {
           $(".main-content").empty();
+          $("footer").addClass("bottom-text")
         });
 
         //Move header to the top
@@ -69,12 +70,35 @@ $(function() {
         $(".logo").addClass("logo-size");
 
         //toggle
-    //     $(".article-text").hide();
 
-    //     $(".article-image").hover(function() {
-    //       $(".article-text").show();
-    //       console.log("test2");
-    //     });
+        $(".article-text").hide();
+
+        // $("p").hide();
+
+        // $(".article-image").on("click",function(){
+        //     $(this).siblings().children("p").toggle()
+        //     console.log("test5")
+        // })
+
+        //slide toggle
+        // $(".article-image").mouseenter(function(){
+        //     $(this).find('p').stop(true, true).slideToggle()
+        //     console.log("test6")
+        // });
+
+        $(".article-image").mouseenter(function(){
+            $(this).find('p').show()
+            console.log("test6")
+        });
+
+        $(".article-image").mouseleave(function(){
+            $(this).find('p').fadeOut()
+            console.log("test7")
+        });
+
+   
+
+  
       });
     });
   }); // close button function
