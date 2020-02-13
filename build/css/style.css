@@ -183,9 +183,6 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; } }
@@ -197,9 +194,49 @@ header {
   .selection {
     margin-left: 50px; } }
 
+@-webkit-keyframes header-transition {
+  from {
+    margin-top: 30vh; }
+  to {
+    margin: 0; } }
+
+@keyframes header-transition {
+  from {
+    margin-top: 30vh; }
+  to {
+    margin: 0; } }
+
+@-webkit-keyframes header-transition2 {
+  from {
+    margin-top: 0; }
+  to {
+    margin: 30vh; } }
+
+@keyframes header-transition2 {
+  from {
+    margin-top: 0; }
+  to {
+    margin: 30vh; } }
+
+@-webkit-keyframes article-text {
+  from {
+    margin-top: 0; }
+  to {
+    margin: 30vh; } }
+
+@keyframes article-text {
+  from {
+    margin-top: 0; }
+  to {
+    margin: 30vh; } }
+
 .header-top {
   margin: 0px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  -webkit-animation-name: header-transition;
+          animation-name: header-transition;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 @media (min-width: 600px) {
   .logo-size {
@@ -211,6 +248,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 25px; }
+  .main-content figure {
+    position: relative; }
   @media (min-width: 600px) {
     .main-content {
       display: grid;
@@ -219,8 +258,6 @@ header {
     .main-content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr; } }
-  .main-content figure {
-    position: relative; }
 
 .article-image img {
   grid-column-start: 1;

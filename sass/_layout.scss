@@ -12,6 +12,7 @@ body {
 }
 
 header {
+
   margin-top: 30vh;
 
   @include tablet {
@@ -22,7 +23,6 @@ header {
 
   @include desktop {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
   }
 }
@@ -38,12 +38,35 @@ header {
 }
 
 //Code to change the header in tablet and desktop mode
-.header-top {
-  margin: 0px;
-  padding-top: 25px;
+
+//Animations
+
+@keyframes header-transition {
+     from {margin-top: 30vh;}
+  to {margin: 0;}
 }
 
+@keyframes header-transition2 {
+    from {margin-top: 0;}
+ to {margin: 30vh;}
+}
+
+@keyframes article-text {
+    from {margin-top: 0;}
+ to {margin: 30vh;}
+}
+
+.header-top {
+    
+  margin: 0px;
+  padding-top: 25px;
+  animation-name: header-transition;
+  animation-duration: 1s;
+}
+
+
 .logo-size {
+
   @include tablet {
     margin-right: 25px;
 
@@ -56,6 +79,15 @@ header {
 //End of responsive header changes
 
 .main-content {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 25px;
+
+  figure {
+    position: relative;
+  }
+
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -64,14 +96,6 @@ header {
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 25px;
-
-  figure {
-    position: relative;
   }
 }
 
