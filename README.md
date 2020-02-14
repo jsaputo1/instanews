@@ -14,9 +14,9 @@ HTML, CSS, jQuery, SASS, Gulp
 
 SASS - Learned how to write CSS styling in SASS format, as well as create varibles and import other style sheets.
 
-CSS - Learned how to create animations
+CSS - Learned how to create animations.
 ​
-jQuery - Learned how to pull data from an API, animate content (e.g. toggleSlide) and manipulate CSS classes (i.e. create, remove, hide)
+jQuery - Learned how to pull data from an API, animate content (e.g. toggleSlide) and manipulate CSS classes (i.e. create, remove, hide).
 
 ## Installation Instructions:
 
