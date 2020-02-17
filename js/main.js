@@ -31,8 +31,7 @@ $(function() {
         $("footer").removeClass("bottom-text"); //Remove fixed footer text
 
         $("body").removeClass("cursor");
-        $(".main-content").removeClass("cursor");
-        //Changes back to default cursor
+        $(".main-content").removeClass("cursor"); //Changes back to default cursor
 
         //Display articles
         let articleImage = value.multimedia[0].url;

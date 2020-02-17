@@ -18,3 +18,8 @@ npm-debug.log
 # Parcel
 .cache
 dist
+
+#  Other
+sass/
+assets/
+

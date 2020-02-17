@@ -44,7 +44,7 @@ header {
 
 //Code to change the header in tablet and desktop mode
 
-//Animations
+//Header transition animations
 
 @keyframes header-transition {
   from {
@@ -115,7 +115,7 @@ header {
   }
 }
 
-// Main content image animation
+//Fade in animation
 
 @keyframes fadein {
   from {
