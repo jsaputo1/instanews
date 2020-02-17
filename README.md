@@ -16,7 +16,7 @@ SASS - Learned how to write CSS styling in SASS format, as well as create varibl
 
 CSS - Learned how to create animations.
 ​
-jQuery
+jQuery -
 
 - Learned how to pull data from an API, animate content (e.g. toggleSlide) and manipulate CSS classes (i.e. create, remove, hide).
 
@@ -40,6 +40,6 @@ jQuery
 
 This web page is not hosted and there is no domain for it. This is only a mock-up version of a web page and if you wish to explore it further, please download all the files to your computer and run the index.html file in your preferred browser.
 
-Written by:
-John Saputo
+Written by: --
+John Saputo --
 February 14th 2020
