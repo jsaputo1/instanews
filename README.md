@@ -14,7 +14,7 @@ HTML, CSS, jQuery, SASS, Gulp
 
 SASS - Learned how to write CSS styling in SASS format, as well as create varibles and import other style sheets.
 
-CSS - Learned how to create animations. <br>
+CSS - Learned how to create animations. <br><br>
 ​
 jQuery -
 
@@ -40,6 +40,5 @@ jQuery -
 
 This web page is not hosted and there is no domain for it. This is only a mock-up version of a web page and if you wish to explore it further, please download all the files to your computer and run the index.html file in your preferred browser.
 
-Written by: <br>
-John Saputo <br>
+Written by: John Saputo <br>
 February 14th 2020
