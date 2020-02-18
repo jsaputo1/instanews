@@ -22,4 +22,8 @@ dist
 #  Other
 sass/
 assets/
+yarn.lock
+package.json
+package-lock.json
+gulpfile.js
 
