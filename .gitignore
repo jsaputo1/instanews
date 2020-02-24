@@ -20,6 +20,8 @@ npm-debug.log
 dist
 
 #  Other
+sass/
 assets/
-
+yarn.lock
+gulpfile.js
 
