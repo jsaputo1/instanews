@@ -52,7 +52,7 @@ Article page in mobile view -
 1. Download or git clone the repo
 2. Run "npm install" in terminal to download the dependencies
 3. Run "npm rebuild node sass" in terminal
-4. Run "gulp" in terminal to build the js.min and CSS files in the build folder. The site will launch on localhost:3000 and will automatically refresh any time you save a file.  
+4. Run "gulp" in terminal, the site will launch on localhost:3000.
 
 ## Dependencies 
 - Browser Sync
