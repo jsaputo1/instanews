@@ -4,6 +4,7 @@
 
 Instanews is a single page website that allows a user to filter top news stories pulled from the New York Times API. Designed mobile first, it is fully responsive with views for mobile, tablet and desktop.
 
+Live Demo - https://johnsaputo.net/instanews/
 
 ## Technologies Used:
 
@@ -22,7 +23,6 @@ Instanews is a single page website that allows a user to filter top news stories
 4. Run "gulp" in terminal to build the js.min and CSS files in the build folder. The site will launch on localhost:3000 and will automatically refresh any time you save a file.  
 
 ## Dependencies 
-
 - Browser Sync
 - Gulp
 - Gulp SASS
