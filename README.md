@@ -10,6 +10,7 @@ Instanews is a single page website that allows a user to filter top news stories
 - HTML
 - CSS / SASS
 - jQuery
+- Chosen jQuery plug in
 - Ajax
 - Gulp
 
@@ -26,3 +27,4 @@ Instanews is a single page website that allows a user to filter top news stories
 - Gulp
 - Gulp SASS
 - jQuery
+- Chosen
