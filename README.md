@@ -6,6 +6,38 @@ Instanews is a single page website that allows a user to filter top news stories
 
 Live Demo - https://johnsaputo.net/instanews/
 
+
+
+Main page in mobile view - 
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/jsaputo1/instanews/master/public/screenshots/mobile-main.png" alt="Screenshot of main view in mobile mode">
+
+</p>
+
+Main page in tablet view - 
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/jsaputo1/instanews/master/public/screenshots/tablet-main.png" height="700px" width="768px" alt="Screenshot of main view in tablet mode">
+
+</p>
+
+
+Article page in desktop view -
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/jsaputo1/instanews/master/public/screenshots/desktop-articles.jpg" alt="Screenshot of articles in desktop mode">
+
+</p>
+
+Article page in mobile view -
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/jsaputo1/instanews/master/public/screenshots/mobile-articles.jpg" alt="Screenshot of articles in mobile mode">
+
+</p>
+
+
 ## Technologies Used:
 
 - HTML
